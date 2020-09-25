@@ -5,7 +5,7 @@ import './App.css';
 import Messages from './Messages';
 
 
-class Counter extends Component {
+class App extends Component {
 handleButtonClick() {
   console.log('clicked!')
 }
@@ -17,11 +17,11 @@ render() {
         Add 1
       </button>
     </div>
-  )
+  );
 }
 }
 
-class App extends Component {
+/*class App extends Component {
   render() {
     
     return (
