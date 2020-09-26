@@ -3,19 +3,45 @@ import React, {Component} from 'react';
 import './App.css';
 //import Tooltip from './composition/Tooltip';
 //import Messages from './Messages';
-import Counter from './state/Counter';
+//import Counter from './state/Counter';
+//import HelloWorld from './state-drills/HelloWorld';
+//import Bomb from './state-drills/Bomb';
+import RouletteGun from './state-drills/RouletteGun';
 
-class App extends Component {
-handleButtonClick() {
-  console.log('clicked!')
+class App extends Component{
+  render() {
+    return (
+      <div>
+        <RouletteGun />
+      </div>
+    )
+  }
 }
+
+/*class App extends Component{
+  render() {
+    return (
+      <div>
+        <Bomb />
+      </div>
+    )
+  }
+}
+/*class App extends Component {
+  render() {
+    return (
+      <div>
+        <HelloWorld />
+      </div>
+    )
+  }
+}
+/*class App extends Component {
+
 render() {
   return (
     <div>
-      <p>The current count: {this.state.count}</p>
-      <button onClick={this.handleButtonClick}>
-        Add 1
-      </button>
+      <Counter step={1}/>
     </div>
   );
 }
